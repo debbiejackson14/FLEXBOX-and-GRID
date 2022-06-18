@@ -1,220 +1,195 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-    background-color:  hsl(0, 0%, 95%);
-   
+  background-color: hsl(0, 0%, 95%);
 }
 
 main {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    /* flex-shrink:  */
-    margin:auto;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* padding: 60px; */
-
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  /* flex-shrink:  */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding: 60px; */
 }
 
 img {
-    margin: 40px 0 30px 0 ;
+  margin: 40px 0 30px 0;
 }
 
 h1 {
-    color:  hsl(0, 0%, 95%); ;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 20px; 
-    font-size: 35px;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 35px;
 }
-
 
 /* Styling my individual boxes */
 .sedan-box {
-    background-color: hsl(31, 77%, 52%);
-    width:259px; 
-    padding:5px; 
-    height: 440px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+  width: 259px;
+  padding: 5px;
+  height: 440px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-    
 
 .suv-box {
-    background-color: hsl(184, 100%, 22%);
-    width:259px; 
-    padding:5px; 
-    height: 440px; 
-    
+  background-color: hsl(184, 100%, 22%);
+  width: 259px;
+  padding: 5px;
+  height: 440px;
 }
 
 .luxury-box {
-    background-color: hsl(179, 100%, 13%);
-    width:259px; 
-    padding: 5px; 
-    height: 440px; 
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-     
+  background-color: hsl(179, 100%, 13%);
+  width: 259px;
+  padding: 5px;
+  height: 440px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Styling the content of my box */
 .cars {
-    color: hsla(0, 0%, 100%, 0.75); 
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    margin-left: 30px;
-  
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
 }
 
 p {
-    line-height: 25px;
-    font-size: 15px;
-    margin-bottom: 10px;
-
-    
+  line-height: 25px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 /* Styling the learn more button */
 button {
-    background-color: hsl(0, 0%, 95%);
-    padding: 13px;
-    margin: 60px 10px;
-    outline: none;
-    border: none;
-    border-radius: 30px;
-    text-align: center;
-    width: 60%;
-    font-family: 'Lexend Deca', sans-serif;
-   
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px;
+  margin: 60px 10px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  width: 60%;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .sedan-btn {
-    color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
 }
 
 .suv-btn {
-    color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
 }
 
 .luxury-btn {
-    color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
 }
 
-button:hover , button:active {
-    background-color: transparent;
-    color: hsl(0, 0%, 95%);
-    border: 3px solid hsl(0, 0%, 95%);
-    cursor: pointer;
-    transition: 0.2s;
+button:hover,
+button:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 3px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 /* Styling my header (navigation links to my task) */
 
 header {
-    margin-top: 30px;
-    text-align: center;
-    font-family: 'Lexend Deca', sans-serif ;
-    font-size: 20px;
-   
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
 }
 
-
 a {
-    color: hsl(184, 100%, 22%);
-    padding: 10px;
-    text-decoration: none;
+  color: hsl(184, 100%, 22%);
+  padding: 10px;
+  text-decoration: none;
 }
 
 a:visited {
-    color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
 }
-
-
-
 
 /* RESPONSIVE STYLING */
 
-@media (min-width: 375px) and (max-width:541px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 70%;
-    }
-    .sedan-box {
+@media (min-width: 375px) and (max-width: 541px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+  }
+  .sedan-box {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 1px;
+  }
 
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 1px;
-    }
-    
-    .luxury-box {
-        border-top-right-radius: 1px;
-        border-bottom-right-radius: 10px;
-         
-    }
+  .luxury-box {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 10px;
+  }
 
-    header {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
+  header {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 
-    a {
-        color: hsl(184, 100%, 22%);
-        padding: 10px;
-        text-decoration-line: underline;
-        font-weight: bold;
-        
-    } 
+  a {
+    color: hsl(184, 100%, 22%);
+    padding: 10px;
+    text-decoration-line: underline;
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 542px) and (max-width: 1400px) {
-    main {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        margin: auto; 
-        justify-content: center;
-        align-items: center;
-        height: 100vh; 
-    }
+  main {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
+  img {
+    margin: 10px 0 20px 0;
+  }
 
-     img { 
-        margin: 10px 0 20px 0 ;
-    }
+  h1 {
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
 
+  p {
+    line-height: 20px;
+    font-size: 14px;
+  }
 
-    h1 {
-        padding-bottom: 20px; 
-        font-size: 25px;
-    }
+  .cars {
+    margin-left: 10px;
+  }
 
-    p {
-        line-height: 20px;
-        font-size: 14px;
-    }
-
-
-    .cars {  
-        margin-left: 10px;
-    }
-
-     button { 
-        margin-bottom: 50px; 
-        width: 70%;
-        font-size: 13px; 
-
+  button {
+    margin-bottom: 50px;
+    width: 70%;
+    font-size: 13px;
+  }
 }
-}
-
-
