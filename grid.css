@@ -20,12 +20,12 @@ main {
     'c c e e'
     ;
     gap: 20px;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 200px;
     grid-template-rows: 180px 90px 110px;
     justify-content: center; 
     align-content: center; 
     height: 100vh; 
-    /* width: 70%;  */
+    width: 100%;  
     
 
 }
@@ -73,4 +73,17 @@ header {
   
   a:visited {
     color:  #EB5020;
+  }
+
+  /* RESPONSIVE STYLING */
+
+  @media (min-width: 375px) and (max-width: 761px) {
+
+    main {
+        gap: 15px;
+        grid-template-columns: 10px 50px 100px 150px;
+        grid-template-rows: 180px 90px 110px;
+        width: 100%;  
+    }
+
   }
